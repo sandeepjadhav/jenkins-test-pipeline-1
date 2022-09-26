@@ -8,10 +8,15 @@ pipeline {
   stages {
     stage('Install dependencies') {
       steps {
-        echo "workspace directory is ${env.WORKSPACE}"
+        bat "npm install"
       }
     }
     
+    stage('Zip File') {
+            steps {
+                bat 'tar czf my_build.tar.gz node_modules package.json'
+            }
+        }
       
      stage('Artifactory configuration') {
             steps {
