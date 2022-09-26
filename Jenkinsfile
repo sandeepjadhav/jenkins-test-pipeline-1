@@ -41,7 +41,7 @@ pipeline {
                   spec: """{
                                 "files": [
                                     {
-                                    "pattern": "${env.WORKSPACE}/*",
+                                    "pattern": "${env.WORKSPACE}/my_build.tar.gz",
                                     "target": "nodejenkinapp/updated",
                                     "recursive": "false"
                                     }
