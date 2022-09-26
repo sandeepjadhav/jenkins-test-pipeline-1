@@ -14,7 +14,8 @@ pipeline {
     
     stage('Remove Old Build and Create new') {
             steps {
-                bat 'rm -rf *.tar.gz *'
+                // bat 'rm -rf *.tar.gz *'
+                bat 'del *.tar.gz *'
                 bat 'tar czf my_build.tar.gz *'
             }
         }
