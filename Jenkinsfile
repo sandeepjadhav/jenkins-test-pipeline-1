@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Install dependencies') {
       steps {
-        echo  "${WORKSPACE}"
+        echo "workspace directory is ${env.WORKSPACE}"
       }
     }
     
