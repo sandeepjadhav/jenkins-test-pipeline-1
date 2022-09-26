@@ -36,10 +36,9 @@ pipeline {
                   spec: """{
                                 "files": [
                                     {
-                                    "pattern": "${env.WORKSPACE}/*",
-                                    "target": "nodejenkinapp/",
-                                    "flat": "true",
-                                    "recursive": "true"
+                                    "pattern": "${env.WORKSPACE}/(*).(*)",
+                                    "target": "nodejenkinapp/updated",
+                                    "recursive": "false"
                                     }
                                 ]
                             }"""
