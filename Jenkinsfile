@@ -42,7 +42,7 @@ pipeline {
                                 "files": [
                                     {
                                     "pattern": "${env.WORKSPACE}/my_build.tar.gz",
-                                    "target": "nodejenkinapp/updated",
+                                    "target": "nodejenkinapp/",
                                     "recursive": "false"
                                     }
                                 ]
