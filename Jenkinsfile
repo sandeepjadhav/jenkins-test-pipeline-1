@@ -14,7 +14,7 @@ pipeline {
     
     stage('Zip File') {
             steps {
-                bat 'tar czf my_build.tar.gz node_modules package.json'
+                bat 'tar czf my_build.tar.gz *'
             }
         }
       
