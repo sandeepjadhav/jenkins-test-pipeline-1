@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Install dependencies') {
       steps {
-        bat 'npm install'
+        echo  "${env.WORKSPACE}"
       }
     }
     
