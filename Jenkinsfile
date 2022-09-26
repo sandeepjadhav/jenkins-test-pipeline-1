@@ -36,8 +36,8 @@ pipeline {
                   spec: """{
                                 "files": [
                                     {
-                                    "pattern": "*.zip",
-                                    "target": "jenkin_node_test/"
+                                    "pattern": "${env.WORKSPACE}/(*)",
+                                    "target": "nodejenkinapp/"
                                     }
                                 ]
                             }"""
