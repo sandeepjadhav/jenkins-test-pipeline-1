@@ -37,7 +37,9 @@ pipeline {
                                 "files": [
                                     {
                                     "pattern": "${env.WORKSPACE}/(*)",
-                                    "target": "nodejenkinapp/"
+                                    "target": "nodejenkinapp/",
+                                    "flat": "true",
+                                    "recursive": "true"
                                     }
                                 ]
                             }"""
